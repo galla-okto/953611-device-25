@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -52,30 +51,33 @@
   <main class="container">
     <h1 class="visually-hidden">Девайс</h1>
 
-    <section class="about_firm">
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-        компаниями:</p>
-      <ul class="transport-firm-list">
-        <li class="transport-firm-item">Деловые линии</li>
-        <li class="transport-firm-item">Автотрейдинг</li>
-        <li class="transport-firm-item">ЖелДорЭкспедиция</li>
-      </ul>
+    <div class="index-columns">
+      <section class="about_firm">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+          компаниями:</p>
+        <ul class="transport-firm-list">
+          <li class="transport-firm-item">Деловые линии</li>
+          <li class="transport-firm-item">Автотрейдинг</li>
+          <li class="transport-firm-item">ЖелДорЭкспедиция</li>
+        </ul>
 
-      <a class="button" href="about_firm.html">Подробнее о нас</a>
-    </section>
+        <a class="button" href="about_firm.html">Подробнее о нас</a>
+      </section>
 
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
-        бывает.</p>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое
+          бывает.</p>
 
-      <p class="cobtacts-map">
-        <img src="img/map.png" width="100" height="50" alt="Адрес на карте">
-      </p>
-      <a class="button" href="write_to_us.html">Напишите нам</a>
-    </section>
+        <p class="cobtacts-map">
+          <img src="img/map.png" width="100" height="50" alt="Адрес на карте">
+        </p>
+        <a class="button" href="write_to_us.html">Напишите нам</a>
+      </section>
+    </div>
 
     <section class="modal modal-letter">
       <h2 class="visually-hidden">Напишите нам</h2>
@@ -109,11 +111,14 @@
   </main>
 
   <footer class="main-footer">
-    <img src="img/logo-device.svg" width="100" height="50" alt="Логотип магазина Девайс">
+    <a class="main-footer-logo" href="#">
+      <img src="img/logo-device.svg" width="100" height="50" alt="Логотип магазина Девайс">
+    </a>
 
     <ul class="user-navigation">
       <li class="login-link"><a href="login.html">Войти</a></li>
     </ul>
+    
     <ul class="compare-basket-navigation">
       <li><a href="compare.html"><span class="compare-svg"></span>Сравнить</a></li>
       <li><a href="basket.html"><span class="basket-svg"></span>Корзина</a></li>
@@ -122,9 +127,9 @@
     <p class="footer-contacts-address">г. Москва, ул. Строителей, 15</p>
 
     <ul class="footer-features-list">
-      <li class="footer-features-item">Доставка</li>
-      <li class="footer-features-item">Гарантия</li>
-      <li class="footer-features-item">Контакты</li>
+      <li class="footer-features-item"><a href="#">Доставка</a></li>
+      <li class="footer-features-item"><a href="#">Гарантия</a></li>
+      <li class="footer-features-item"><a href="#">Контакты</a></li>
     </ul>
 
     <a class="footer-contacts-telephone" href="+74954959595">Тел.: +7 (495) 495-95-95</a>
