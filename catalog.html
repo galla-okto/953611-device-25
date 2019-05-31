@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <!--подключить локально шрифты, а не через CDN-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -13,20 +14,22 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo-device.svg" width="100" height="50" alt="Логотип магазина Девайс">
+        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
       </a>
-      <ul class="search-navigation">
-        <li class="search-link">Поиск по сайту</li>
-      </ul>
-      <!-- Здесь будет форма (позже сделать) -->
-      <ul class="user-navigation">
-        <li><a href="profile.html"><span class="login-link"></span>Валентин Петухов</a></li>
-        <li class="user-navigation-inactive"><a href="logout.html">Выйти</a></li>
-      </ul>
-      <ul class="compare-basket-navigation">
-        <li><a href="compare.html"><span class="compare-svg"></span>Сравнить</a></li>
-        <li><a href="basket.html"><span class="basket-svg"></span>Корзина</a></li>
-      </ul>
+      <div class="header-container">
+        <ul class="search-navigation">
+          <li class="search-link">Поиск по сайту</li>
+        </ul>
+        <!-- Здесь будет форма (позже сделать) -->
+        <ul class="user-navigation">
+          <li><a href="profile.html"><span class="login-link"></span>Валентин Петухов</a></li>
+          <li class="user-navigation-inactive"><a href="logout.html">Выйти</a></li>
+        </ul>
+        <ul class="compare-basket-navigation">
+          <li><a href="compare.html"><span class="compare-svg"></span>Сравнить</a></li>
+          <li><a href="basket.html"><span class="basket-svg"></span>Корзина</a></li>
+        </ul>
+      </div>
       <ul class="site-navigation">
         <li class="catalog-link main-menu"><a href="catalog.html">Каталог товаров</a>
           <ul class="catalog-menu-1">
@@ -65,7 +68,8 @@
           <legend>Цвет</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black"
+                checked>
               <label for="black">Черный</label>
             </li>
             <li class="filter-option">
@@ -73,15 +77,18 @@
               <label for="white">Белый</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue"
+                checked>
               <label for="blue">Синий</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red"
+                checked>
               <label for="red">Красный</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink" disabled>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink"
+                disabled>
               <label for="pink">Розовый</label>
             </li>
           </ul>
