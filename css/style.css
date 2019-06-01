@@ -256,7 +256,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -265,17 +265,13 @@ a {
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
-
-    min-height: 299px;
+    margin-bottom: 45px;
     background-color: #f7e296;
 }
 
 .main-navigation {
     display: flex;
     flex-direction: column;
-    
-    min-height: 299px;
 }
 
 .main-header-logo {
@@ -290,23 +286,19 @@ a {
     margin: 0 auto;
     padding: 0 60px;
     display: flex;
-  }
+}
 
 .search-navigation {
     width: 200px;
     margin: 0;
     margin-right: 300px;
     padding: 0;
-
-    min-height: 55px;
 }
 
 .user-navigation {
     width: 100px;
     margin: 0;
     padding: 0;
-
-    min-height: 55px;
 }
 
 .compare-basket-navigation {
@@ -314,16 +306,13 @@ a {
     margin: 0;
     margin-left: auto;
     padding: 0;
-
-    min-height: 55px;
 }
 
 .site-navigation {
     width: 1040px;
     margin: 0;
+    margin-left: 60px;
     padding: 0;
-
-    min-height: 55px;
 }
 
 .site-navigation li {
@@ -340,17 +329,16 @@ a {
 
 .about_firm {
     width: 560px;
-    min-height: 570px;
 }
 
 .contacts {
     width: 560px;
-    min-height: 570px;
 }
 
 /* catalog */
 .page-title {
     margin: 0;
+    margin-left: 60px;
     margin-bottom: 28px;
     padding: 0;
 }
@@ -358,6 +346,7 @@ a {
 .breadcrumbs {
     padding: 0;
     margin: 0;
+    margin-left: 60px;
     margin-bottom: 50px;
  }
 
@@ -367,11 +356,11 @@ a {
   }
 
  .filters {
-     width: 200px;
+    width: 200px;
  }
 
  .catalog {
-     width: 760px;
+    width: 760px;
  }
 
  .catalog-list {
@@ -396,9 +385,7 @@ a {
 /* footer */
 .main-footer {
     padding: 65px 20px;
-    margin-top: 0;
-
-    min-height: 323px;
+    margin-top: 70px;
  }
 
  .footer-container {
@@ -409,6 +396,7 @@ a {
  .container-row-1 {
     display: flex; 
     justify-content: space-between;
+    margin-bottom: 40px;
  }
 
  .container-row-1-link {
@@ -422,15 +410,30 @@ a {
  .container-row-2 {
     display: flex; 
     justify-content: space-between;
+    margin-bottom: 70px;
+ }
+
+ .footer-contacts-address {
+    margin: 0;
+ }
+
+ .footer-features-list {
+    margin: 0;
+    padding: 0;
  }
 
  .footer-features-list li {
-     display: inline;
+    display: inline;
  }
 
  .container-row-3 {
     display: flex; 
     justify-content: space-between;
+ }
+
+ .footer-social {
+    margin: 0;
+    padding: 0;
  }
 
  .footer-social li {
