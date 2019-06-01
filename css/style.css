@@ -348,6 +348,51 @@ a {
     min-height: 570px;
 }
 
+/* catalog */
+.page-title {
+    margin: 0;
+    margin-bottom: 28px;
+    padding: 0;
+}
+
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+ }
+
+ .catalog-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+ .filters {
+     width: 200px;
+ }
+
+ .catalog {
+     width: 760px;
+ }
+
+ .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;
+  }
+
+  .catalog-item {
+    width: 360px;
+    margin-bottom: 75px;
+    margin-right: 40px;
+  }
+
+  .catalog-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
 /* footer */
 .main-footer {
     padding: 65px 20px;
