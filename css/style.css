@@ -1,8 +1,6 @@
 body {
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 40px;
+    padding-top: 21px;
 
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -78,6 +76,10 @@ a {
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.catalog-menu {
+    display: none;
 }
 
 .catalog-menu-1,
@@ -258,40 +260,38 @@ a {
 .container {
     width: 1160px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .main-header {
-    width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 318px;
     margin-bottom: 45px;
-    background-color: #f7e296;
+    background-image: linear-gradient(#ffffff 6.67%, #f7e296 0);
 }
 
 .main-navigation {
+    padding: 0 60px;
     display: flex;
     flex-direction: column;
 }
 
 .main-header-logo {
-    width: 163;
-    height: 35;
-    margin-left: 60px;
-    margin-top: -19px;
+    width: 163px;
+    height: 35px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 
 .header-container {
-    width: 1040px;
-    margin: 0 auto;
-    padding: 0 60px;
     display: flex;
+    margin-bottom: 49px;
 }
 
 .search-navigation {
     width: 200px;
     margin: 0;
-    margin-right: 300px;
+    margin-right: 340px;
     padding: 0;
 }
 
@@ -309,36 +309,38 @@ a {
 }
 
 .site-navigation {
-    width: 1040px;
     margin: 0;
-    margin-left: 60px;
     padding: 0;
+    display: flex;
 }
 
-.site-navigation li {
-    display: inline;
- }
+.catalog-link {
+    width: 300px;
+    margin-right: 240px;
+}
 
 /* body */
 .index-columns {
     display: flex;
-    justify-content: space-between;
     padding: 50px 20px;
     margin-bottom: 35px;
 }
 
 .about_firm {
-    width: 560px;
+    width: 50%;
 }
 
 .contacts {
-    width: 560px;
+    width: 50%;
 }
 
 /* catalog */
+.catalog-title-container {
+    padding: 0 60px;
+}
+
 .page-title {
     margin: 0;
-    margin-left: 60px;
     margin-bottom: 28px;
     padding: 0;
 }
@@ -346,7 +348,6 @@ a {
 .breadcrumbs {
     padding: 0;
     margin: 0;
-    margin-left: 60px;
     margin-bottom: 50px;
  }
 
@@ -382,9 +383,13 @@ a {
     margin-right: 0;
   }
 
+  .modal {
+      display: none;
+  }
+
 /* footer */
 .main-footer {
-    padding: 65px 20px;
+    padding: 65px 0;
     margin-top: 70px;
  }
 
