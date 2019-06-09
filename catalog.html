@@ -110,7 +110,7 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available" value="yes"
-                  id="filter-available-yes">
+                  id="filter-available-yes" checked>
                 <label for="filter-available-yes">Yes</label>
               </li>
               <li class="filter-option">
@@ -128,15 +128,19 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">Любительская селфи-палка</a>
-            </h3>
+            <div class="actions">
+              <a class="button add-to-basket" href="#">В корзину</a>
+              <a class="button add-to-compare" href="#">Добавить к сравнению</a>
+            </div>
             <p class="catalog-item-image">
-              <img src="img/item-1.png" width="" height="" alt="Любительская селфи-палка">
+              <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
             </p>
-            <p class="catalog-item-price">500 руб</p>
-            <a class="button add-to-basket" href="#">В корзину</a>
-            <a class="button add-to-compare" href="#">Добавить к сравнению</a>
+            <div class="catalog-item-container">
+              <h3>
+                <a href="catalog-item.html">Любительская селфи-палка</a>
+              </h3>
+              <p class="catalog-item-price">500 руб</p>
+            </div>
           </li>
           <li class="catalog-item">
             <h3>
