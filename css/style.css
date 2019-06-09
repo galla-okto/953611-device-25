@@ -68,6 +68,16 @@ input[type="radio"].visually-hidden {
     opacity: 0.8; 
 }
 
+.modal-close {
+    background: url('../img/modal-close.svg') no-repeat top;
+    width: 55px;
+    height: 55px;
+    border: 0;
+    position: absolute;
+    top: -67px;
+    right: -78px;
+}
+
 .container {
     width: 1160px;
     margin: 0 auto;
@@ -377,6 +387,7 @@ input[type="radio"].visually-hidden {
 
 .index-columns h2 {
     margin: 0;
+    margin-top: 51px;
     margin-bottom: 60px;
 
     font-family: "Gilroy", Arial, sans-serif;
@@ -390,12 +401,14 @@ input[type="radio"].visually-hidden {
     margin-bottom: 45px;
 }
 
-.about_firm {
-    width: 460px;
+.line {
+    width: 80px;
+    height: 7px;
+    background-color: #000000;
 }
 
-.contacts {
-    width: 560px;
+.about_firm {
+    width: 460px;
 }
 
 .transport-firm-list {
@@ -416,19 +429,77 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
 }
 
-.letter-item input,
-.letter-item textarea {
-    font: inherit;
+.contacts {
+    width: 560px;
+}
 
-    background-color: #f2f2f2;
-    border: 0;
+.contacts-map {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 70px;
+}
+
+.contacts-map img {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    height: 222px;
+}
+
+.modal-letter {
+    width: 760px;
+    min-height: 371px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 88px;
+    padding-bottom: 80px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.letter-form {
+    margin: 0;
+    padding: 0;
+    width: 760px;
+    position: relative;
+}
+
+.letter-item-container {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.letter-item {
+    width: 360px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 38px;
 }
 
 .letter-item label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+    margin-left: 0;
+
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+}
+
+.letter-item input {
+    box-sizing: border-box;
+    width: 360px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    
+    font: inherit;
+
+    background-color: #f2f2f2;
+    border: 0;
 }
 
 .letter-item input:hover {
@@ -439,6 +510,25 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 
     border: 2px solid #f0c52e;
+}
+
+.letter-item textarea {
+    box-sizing: border-box;
+    width: 760px;
+    height: 156px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    
+    font: inherit;
+
+    background-color: #f2f2f2;
+    border: 0;
+}
+
+.letter-form button {
+    width: 200px;
 }
 
 .catalog-item a {
@@ -540,10 +630,6 @@ input[type="radio"].visually-hidden {
 .filter-input:disabled + label {
     color: #a6a6a6; 
 }
- 
-.modal {
-    display: none;
-}
 
 .main-footer {
     color: #ffffff;
@@ -558,10 +644,18 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
+ .main-footer-logo path,
+ .login-link path,
+ .compare-svg path,
+ .basket-svg path {
+     fill: #ffc600;
+ }
+ 
 .container-row-1 {
     display: flex; 
     justify-content: space-between;
     margin-bottom: 40px;
+    align-items: center;
 }
 
 .container-row-1-link {
@@ -575,12 +669,8 @@ input[type="radio"].visually-hidden {
 .container-row-2 {
     display: flex; 
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 70px;
-}
-
-.container-row-3 {
-    display: flex; 
-    justify-content: space-between;
 }
 
 .footer-contacts-address {
@@ -602,10 +692,16 @@ input[type="radio"].visually-hidden {
 .footer-features-list {
     margin: 0;
     padding: 0;
-}
+    width: 440px;
+    letter-spacing: 3px;
 
-.footer-features-list li {
-    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-features-item {
@@ -616,37 +712,64 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
 }
 
+.footer-features-list a:hover {
+    opacity: 0.5; 
+}
+
+.footer-features-list a:focus {
+    opacity: 0.2; 
+}
+
+.footer-contacts-telephone {
+    text-align: right;
+}
+
+.container-row-3 {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer .line {
+    background-color: #ffc600;
+}
+
 .footer-social {
     margin: 0;
     padding: 0;
 }
 
-.footer-social li {
-    display: inline;
-}
-
-.footer-features-list,
 .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+
     list-style: none;
-} 
-
-.footer-features-list a:hover,
-.footer-social ul a:hover {
-    opacity: 0.5; 
 }
 
-.footer-features-list a:focus,
-.footer-social ul a:focus{
-    opacity: 0.2; 
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  
+    background-color: transparent;
 }
 
-.footer-features-list {
-    text-transform: uppercase;
-    text-align: center;
+.social-button path {
+    fill: #7e7e7e;
 }
 
-.footer-contacts-telephone {
-    text-align: right;
+.social-button:hover path {
+    fill: #b5b5b5;    
+}
+
+.social-button:focus path {
+    fill: #595959;    
 }
 
 /*! Generated by Font Squirrel (https://www.fontsquirrel.com) on May 22, 2019 */
