@@ -184,7 +184,7 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.search-item input:focus + .search-form .button {
+.search-form input:focus + .search-form .button {
     display: block;
     width: 100%;
 
@@ -531,10 +531,6 @@ input[type="radio"].visually-hidden {
     width: 200px;
 }
 
-.catalog-item a {
-    color: #000000;
-}
-
 .catalog-title-container {
     padding: 0 60px;
 }
@@ -625,41 +621,71 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+    position: relative;
     width: 360px;
-    margin-bottom: 75px;
+    height: 470px;
+    margin-bottom: 35px;
     margin-right: 40px;
+    
+    background-color: lightskyblue;
 }
 
 .catalog-item:nth-child(2n) {
     margin-right: 0;
 }
 
-.catalog-item .actions {
+.catalog-item a {
+    color: #000000;   
+}
+
+.catalog-item-image-actions {
+    position: relative;
+    display: inline-block;
+    width: 360px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+}
+
+.catalog-item-image-actions .actions {
     position: absolute;
     top: 0;
     left: 0;
     
-    width: 218px;
-    height: 88px;
-    padding: 40px 0;
+    width: 360px;
     
-    background-color: rgba(255,255,255,0.9);
+    padding: 40px 0;
+    margin: auto;
+    
     z-index: 10;
+
+    display: none;    
 }
 
-.catalog-item .actions {
-    display: none;
+.catalog-item-image-actions .actions .add-to-basket,
+.catalog-item-image-actions .actions .add-to-compare {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 0;
 }
-  
-.catalog-item:hover .actions {
+
+.catalog-item-image-actions:hover .actions {
     display: block;
 }
 
+.catalog-item-image-actions:hover .catalog-item-image img {
+    opacity: 10%;
+}
+
 .catalog-item-image {
+    margin: 0 0;
     width: 360px;
     height: 380px;
-  }
-  
+}
+
 .catalog-item-image img {
     max-width: 100%;
 }
@@ -676,10 +702,6 @@ input[type="radio"].visually-hidden {
 .catalog-item-container {
     display: flex;
     justify-content: space-between;
-}
-
-.catalog-item .catalog-item-image:hover {
-    background-color: greenyellow;
 }
 
 .filters {
