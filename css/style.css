@@ -852,12 +852,23 @@ input[type="radio"].visually-hidden {
     display: flex; 
 }
 
-.user-navigation .login-icon {
+.container-row-1-link .user-navigation {
     position: relative;
-    padding-left: 26px;
 }
 
-.login-icon::before {
+.login-icon {
+    position: absolute;
+
+    top: 5px;
+    left: 0px;
+
+    width: 13px;
+    height: 12px;
+    margin-right: 13px;
+    background-color: #f7e296;
+}
+
+/*.login-icon::before {
     content: "";
 
     position: absolute;
@@ -867,7 +878,7 @@ input[type="radio"].visually-hidden {
     width: 13px;
     height: 12px;
     margin-right: 13px;
-}
+}*/
 
 .login-icon path {
     fill: #ffc600;
