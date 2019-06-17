@@ -1,14 +1,17 @@
 body {
     margin: 0;
-    padding-top: 21px;
+    padding-top: 22px;
 
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: lighter;
     color: #000000;
-    
+
     background: #ffffff;
+    /*xxx*/background-image: url("../img/device-index.jpg");
+    /*xxx*/background-repeat: no-repeat;    
+    background-position: center top;
 }
 
 a {
@@ -82,12 +85,14 @@ input[type="radio"].visually-hidden {
     width: 1160px;
     margin: 0 auto;
     padding: 0;
+    /*xxx*/background-color: rgba(176, 224, 87, 0.7);;
 }
 
 .main-header {
     min-height: 318px;
     margin-bottom: 45px;
-    background-image: linear-gradient(#ffffff 6.67%, #f7e296 0);
+    /*xxxbackground-image: linear-gradient(#ffffff 6.67%, #f7e296 0);*/
+    /*xxx*/background-color: rgb(21, 114, 201,0.3);
 }
 
 .main-navigation {
@@ -101,12 +106,12 @@ input[type="radio"].visually-hidden {
     height: 35px;
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
 }
 
 .header-container {
     display: flex;
-    margin-bottom: 49px;
+    margin-bottom: 17px;
 }
 
 .search-navigation,
@@ -122,7 +127,8 @@ input[type="radio"].visually-hidden {
 .user-navigation a,
 .compare-basket-navigation a,
 .site-navigation a {
-    color: #000000;
+    /*xxxcolor: #000000;*/
+    color: red;
 }
 
 .search-navigation a:hover,
@@ -148,10 +154,10 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input {
-    box-sizing: padding-box;
+    box-sizing: border-box;
     width: 355px;
-    margin: 0;
-    padding-top: 5px;
+    margin: 0 0;
+    padding-top: 0;
     padding-left: 40px;
     padding-right: 15px;
     padding-bottom: 6px;
@@ -231,7 +237,7 @@ input[type="radio"].visually-hidden {
  }
 
 .compare-basket-navigation {
-    width: 220px;
+    width: 214px;
     margin: 0;
     margin-left: auto;
     padding: 0;
