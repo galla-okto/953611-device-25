@@ -79,6 +79,17 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -67px;
     right: -78px;
+    opacity: 0.5;
+    outline: none;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.3;
 }
 
 .container {
@@ -445,17 +456,17 @@ input[type="radio"].visually-hidden {
     width: 560px;
 }
 
-.contacts-map {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 70px;
-}
-
 .contacts-map img {
     margin: 0;
     padding: 0;
     width: 560px;
     height: 222px;
+    margin-bottom: 32px;
+}
+
+.modal {
+    margin: 0;
+    padding: 0;
 }
 
 .modal-letter {
@@ -507,11 +518,12 @@ input[type="radio"].visually-hidden {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
+    border: 2px solid transparent;
     
     font: inherit;
 
-    background-color: #f2f2f2;
-    border: 0;
+    background-color: #f2f2f2; 
+    outline: none;
 }
 
 .letter-item input:hover {
@@ -541,6 +553,15 @@ input[type="radio"].visually-hidden {
 
 .letter-form button {
     width: 200px;
+}
+
+.modal-map { 
+    position: relative;    
+}
+
+.modal-map .modal-close {
+    top: 18px;
+    right: 222px;
 }
 
 .inner_page .user-navigation {
