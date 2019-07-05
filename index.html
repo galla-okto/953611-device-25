@@ -58,14 +58,21 @@
   <main class="container">
     <h1 class="visually-hidden">Девайс</h1>
 
-    <section class="top-products">
-      <h2 class="visually-hidden">Топовые товары</h2>
-      <div class="slide slide-1">
-        <div class="slide-image">
-          <img src="img/slider-1.png" width="384" height="486" alt="">
-        </div>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
-        <div class="slide-description">
+    <section class="slider">
+      <h2 class="visually-hidden">Топовые товары</h2>
+
+      <div class="slider-controls">
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+
+      <ul class="slider-list">
+        <li class="slider-item slide" id="slide1">
           <div class="line"></div>
           <div class="slide-number">
             <p>01</p>
@@ -75,19 +82,7 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине.</br>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-          <div class="index-columns">
-            <a class="button" href="product.html">Подробнее</a>
-            <ul class="slide-option">
-              <li><a class="slide-button" href="#"><span class="visually-hidden">Слайд 1</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                    <path
-                      d="M11.5 2c5.238 0 9.5 4.262 9.5 9.5S16.738 21 11.5 21 2 16.738 2 11.5 6.262 2 11.5 2m0-2C5.149 0 0 5.149 0 11.5 0 17.852 5.149 23 11.5 23 17.852 23 23 17.852 23 11.5 23 5.149 17.852 0 11.5 0z" />
-                    <path
-                      d="M11.5 9.004a2.5 2.5 0 0 1 2.496 2.496 2.5 2.5 0 0 1-2.496 2.496A2.5 2.5 0 0 1 9.004 11.5 2.5 2.5 0 0 1 11.5 9.004m0-2a4.496 4.496 0 1 0 0 8.992 4.496 4.496 0 0 0 0-8.992z" />
-                  </svg>
-                </a></li>
-            </ul>
-          </div>
+          <a class="button" href="product.html">Подробнее</a>
 
           <table>
             <tr class="slide-description-numbers">
@@ -101,10 +96,54 @@
               <td>Материал</td>
             </tr>
           </table>
-        </div>
-      </div>
+        </li>
 
-      <div class="switch"></div>
+        <li class="slider-item slide" id="slide2">
+          <div class="line"></div>
+          <div class="slide-number">
+            <p>02</p>
+          </div>
+          <h3>Худеем</br>правильно!</h3>
+
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы</br>
+            не пропускать занятия и соблюдать диету.</p>
+
+          <a class="button" href="product.html">Подробнее</a>
+
+          <table>
+            <tr class="slide-description-numbers">
+              <td class="slide-description-column1">48 часов</td>
+            </tr>
+            <tr class="slide-description-numbers-comment">
+              <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="slider-item slide" id="slide3">
+          <div class="line"></div>
+          <div class="slide-number">
+            <p>03</p>
+          </div>
+          <h3>Порхает как бабочка,</br>жалит как пчела!</h3>
+
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен</br>
+            мощным лазером, замаскированным под стандартную камеру.</p>
+
+          <a class="button" href="product.html">Подробнее</a>
+
+          <table>
+            <tr class="slide-description-numbers">
+              <td class="slide-description-column1">800 м</td>
+              <td class="slide-description-column2">50 м</td>
+            </tr>
+            <tr class="slide-description-numbers-comment">
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
     </section>
 
     <section class="popular-products">
@@ -193,30 +232,62 @@
       <h2 class="visually-hidden">Услуги</h2>
 
       <ul class="services-list">
-        <li class="services-item-active">Доставка</li>
-        <li class="services-item">Гарантия</li>
-        <li class="services-item">Кредит</li>
+        <li><a class="services-item" id="item1">Доставка</a></li>
+        <li><a class="services-item" id="item2">Гарантия</a></li>
+        <li><a class="services-item" id="item3">Кредит</a></li>
       </ul>
 
-      <div class="services-slide slide-1">
-        <div class="services-slide-description">
+      <ul class="services-slides">
+        <li class="services-slide slide2" id="slide2-1">
+          <div class="services-slide-description">
+            <h3>Доставка</h3>
 
-          <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+          </div>
 
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.</p>
-        </div>
+          <div class="services-slide-image">
+            <img src="img/delivery.svg" width="136" height="164" alt="">
+          </div>
+        </li>
 
-        <div class="services-slide-image">
-          <img src="img/delivery.svg" width="136" height="164" alt="">
-        </div>
-      </div>
+        <li class="services-slide slide2" id="slide2-2">
+          <div class="services-slide-description">
+            <h3>Гарантия</h3>
+
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит<br>
+              дом — не переживайте, мы выдадим вам новый<br>
+              Товар, не дом, конечно же.</p>
+          </div>
+
+          <div class="services-slide-image">
+            <img src="img/warranty.svg" width="136" height="164" alt="">
+          </div>
+        </li>
+
+        <li class="services-slide slide2" id="slide2-3">
+          <div class="services-slide-description">
+            <h3>Кредит</h3>
+
+            <p>Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+
+         <div class="services-slide-image">
+            <img src="img/credit.svg" width="136" height="164" alt="">
+          </div>
+        </li>
+      </ul>
+    
     </section>
 
     <section class="partners">
       <h2 class="visually-hidden">Партнеры</h2>
-      <a class="partner" href="#"><img src="img/logo-1.png" width="260" height="100" alt=""></a>
-      
+      <a class="partner" href="#"><img src="img/logo-1.png" width="260" height="100" alt="Партнер DJI"></a>
+      <a class="partner" href="#"><img src="img/logo-2.png" width="260" height="100" alt="Партнер SP GADGETS"></a>
+      <a class="partner" href="#"><img src="img/logo-3.png" width="260" height="100" alt="Партнер GoPro"></a>
+      <a class="partner" href="#"><img src="img/logo-4.png" width="260" height="100" alt="Партнер VIVE"></a>
     </section>
 
     <div class="index-columns">
