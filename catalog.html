@@ -10,11 +10,11 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="inner_page">
+<body class="inner-page">
   <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        <img src="img/logo-device.svg" width="163" height="38" alt="Логотип магазина Девайс">
       </a>
       <div class="header-container">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -55,8 +55,8 @@
     </nav>
   </header>
 
-  <main class="container">
-    <div class="catalog-title-container">
+  <main>
+    <div class="catalog-title-container container">
       <h1 class="page-title">Моноподы для селфи</h1>
 
       <ul class="breadcrumbs">
@@ -69,58 +69,60 @@
     <div class="catalog-columns">
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <div class="filters-container">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
 
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black"
-                  id="black" checked>
-                <label for="black">Черный</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white"
-                  id="white">
-                <label for="white">Белый</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue"
-                  checked>
-                <label for="blue">Синий</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red"
-                  checked>
-                <label for="red">Красный</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink"
-                  disabled>
-                <label for="pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available" value="yes"
-                  id="filter-available-yes" checked>
-                <label for="filter-available-yes">Yes</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available" value="no"
-                  id="filter-available-no">
-                <label for="filter-available-no">No</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="filter-button button" type="submit">Отправить</button>
-        </form>
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black"
+                    id="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white"
+                    id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue"
+                    id="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red"
+                    checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink"
+                    id="pink" disabled>
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available"
+                    value="yes" id="filter-available-yes" checked>
+                  <label for="filter-available-yes">Yes</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available"
+                    value="no" id="filter-available-no">
+                  <label for="filter-available-no">No</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter-button button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
-
+      
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
@@ -222,7 +224,7 @@
                   d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
               </svg>
               Валентин Петухов</a>
-              <a class="exit">Выйти</a>
+            <a class="exit">Выйти</a>
           </li>
 
           <li><a href="compare.html" class="link">
